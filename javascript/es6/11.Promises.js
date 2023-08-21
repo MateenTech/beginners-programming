@@ -30,8 +30,60 @@ const makeServerRequest = new Promise((resolve, reject) => {
 */
 
 makeServerRequest
-.then(result => console.log(result)) // if the promise is succeedded return result (resolve)
-.catch(err => console.log(err)); // if the promise is failed return error (reject)
+    .then(result => console.log(result)) // if the promise is succeedded return result (resolve)
+    .catch(err => console.log(err)); // if the promise is failed return error (reject)
 
 // result is the argument passed in to the resolve method.
 // error is the argument passed in to the reject method.
+let stocks = {
+    fruits: ["strawberry", "banana", "blueberry"],
+    liquid: ["water", "ice"],
+    holder: ["cone", "cup", "stick"],
+    toppings: ["chocolate", "peanuts"]
+}
+
+// const order = (callBack) => {
+//     setTimeout(() => {
+//         console.log(`1. ${stocks.fruits[0]}, was selected.`);
+
+//         callBack();
+//     }, 2000);
+// };
+
+// const production = () => {
+//     setTimeout(() => {
+//         console.log("2. production has started.");
+//         setTimeout(() => {
+//             console.log("3. the fruit has been chopped.");
+//             setTimeout(() => {
+//                 console.log(`4. ${stocks.liquid[0]} and ${stocks.liquid[1]} has been added.`)
+//                 setTimeout(() => {
+//                     console.log("5. the machine was started.");
+//                     setTimeout(() => {
+//                         console.log(`6. preparing ice cream in ${stocks.holder[0]}.`)
+//                         setTimeout(() => {
+//                             console.log(`7. ${stocks.toppings[0]} topping.`);
+//                             setTimeout(() => {
+//                                 console.log('\n8. Icream is served, enjoy it :).');
+//                             }, 2000);
+//                         }, 3000);
+//                     }, 2000);
+//                 }, 1000);
+//             }, 1000);
+//         }, 2000)
+//     }, 0)
+// };
+
+// order(production);
+
+
+
+async function placeOder() {
+    try {
+        await abca;
+    } catch (error) {
+        return error.message;
+    }
+};
+
+placeOder().then((res) => console.log(res));
