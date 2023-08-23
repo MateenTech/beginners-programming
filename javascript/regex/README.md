@@ -61,3 +61,19 @@ Any string variable having string 'twinkle' more than once.
 !! Note: You can have multiple flags on your regex like /search/gi.
 
 ``````
+
+##  Match Anythin with Wildcard Period (.):
+``````
+
+The wildcard character . will match any one character. The wildcard is also called dot and period. You can use the wildcard character just like any other character in the regex. For example, if you wanted to match hug, huh, hut, and hum, you can use the regex /hu./ to match all four words.
+
+``````
+
+## Match Single Character With Multiple Possibilities
+``````
+
+You can search for a literal pattern with some flexibility with character classes. Character classes allow you to define a group of characters you wish to match by placing them inside square ([ and ]) brackets.
+
+For example, you want to match bag, big, and bug but not bog. You can create the regex /b[aiu]g/ to do this. The [aiu] is the character class that will only match the characters a, i, or u.
+
+``````
