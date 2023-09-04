@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+        max-height: 100vh;
+        background-color: #f5f6f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      button {
+        padding: 0.7rem 1.25rem;
+        border: 1px solid;
+        border-radius: 0.25rem 0.75rem;
+        font-weight: 700;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      img {
+        width: 100%;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.25rem;
+      }
+
+      .images {
+        display: grid;
+        place-content: center;
+        box-shadow: 0 10px 20px #838383;
+      }
+
+      .main {
+        max-width: 200px;
+      }
+
+      .count {
+        text-align: center;
+        font-size: 1.75rem;
+      }
+
+      .buttons button {
+        background-color: rgb(255, 144, 181);
+        box-shadow: 0 5px 10px rgb(224, 174, 191);
+      }
+
+      .buttons button:active {
+        box-shadow: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main class="main">
+        <div class="buttons">
+            <button class="minus">-</button>
+            <p class="count">0</p>
+            <button class="plus">+</button>
+        </div>
+        <div class="images">
+          <img
+            src="https://play-lh.googleusercontent.com/XeSBmDqjRW1zvyQ9IbSyzqV4gvErHAvR-KnOwcoa3i5AH0ZK417qaxYB-EMUGg98Y3s=w2560-h1440-rw"
+            ,
+            alt=""
+          />
+        </div>
+      </main>
+    </div>
+
+    <script src="./2.imagesSlider.js"></script>
+  </body>
+</html>
